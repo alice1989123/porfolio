@@ -175,15 +175,6 @@ h1 {
   font-size: 0.95rem;
 }
 
-.banner {
-  width: min(1280px, calc(100% - 48px));
-  height: auto;
-  margin: 0 auto 44px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 8px;
-  object-fit: contain;
-}
-
 .section {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
@@ -204,11 +195,15 @@ h2 {
   letter-spacing: 0;
 }
 
-.intro > p,
+.about-copy p,
 .project-main p,
 .timeline p {
   color: var(--muted);
   font-size: 1.05rem;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
 }
 
 .skill-band {
@@ -503,11 +498,6 @@ h2 {
   .skill-band,
   .badge-grid {
     grid-template-columns: 1fr;
-  }
-
-  .banner {
-    width: calc(100% - 32px);
-    margin-bottom: 32px;
   }
 
   .section {
