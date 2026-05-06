@@ -1,0 +1,14 @@
+# LaTeX build outputs
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# Local image backups
+*.bk
+
+# OS/editor files
+.DS_Store
+Thumbs.db
