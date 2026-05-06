@@ -364,6 +364,37 @@ h2 {
   border-bottom: 0;
 }
 
+.screenshot-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 34px;
+}
+
+.screenshot-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.screenshot-gallery img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+  border-bottom: 1px solid var(--line);
+}
+
+.screenshot-gallery figcaption {
+  min-height: 64px;
+  padding: 14px 16px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
 .timeline {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -424,6 +455,7 @@ h2 {
   .hero-grid,
   .intro,
   .project-layout,
+  .screenshot-gallery,
   .timeline {
     grid-template-columns: 1fr;
   }
