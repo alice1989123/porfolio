@@ -183,9 +183,10 @@ h1 {
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(280px, 1.1fr);
-  gap: 52px;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(320px, 1fr);
+  gap: 44px;
   align-items: start;
+  padding-bottom: 42px;
 }
 
 h2 {
@@ -202,6 +203,10 @@ h2 {
   font-size: 1.05rem;
 }
 
+.about-copy {
+  max-width: 640px;
+}
+
 .about-copy p:last-child {
   margin-bottom: 0;
 }
@@ -210,14 +215,15 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
-  width: 100%;
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto 58px;
   padding: 0;
   background: var(--line);
 }
 
 .skill-band div {
-  min-height: 190px;
-  padding: 30px;
+  min-height: 158px;
+  padding: 24px;
   background: var(--cloud);
 }
 
@@ -231,6 +237,7 @@ h2 {
 .skill-band p {
   margin-bottom: 0;
   color: var(--ink);
+  font-size: 0.98rem;
 }
 
 .section-head {
@@ -544,6 +551,10 @@ h2 {
 
   .section {
     padding: 54px 0;
+  }
+
+  .skill-band {
+    padding: 0;
   }
 
   .projects {
