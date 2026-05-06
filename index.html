@@ -118,21 +118,66 @@
 
       <section class="section projects" id="projects">
         <div class="section-head">
-          <p class="section-kicker">Selected Project</p>
-          <h2>Gatsbyt: on-chain analytics and ML forecasting platform.</h2>
+          <p class="section-kicker">Selected Projects</p>
+          <h2>Personal products built around data, machine learning, and AWS architecture.</h2>
         </div>
-        <div class="project-layout">
+        <div class="project-grid">
           <article class="project-main">
-            <h3>Production-style data and ML architecture</h3>
+            <p class="project-type">AI audio product</p>
+            <h3>Jamstems</h3>
             <p>
-              Personal platform combining blockchain ETL, feature generation, PyTorch forecasting,
-              MLflow experiment tracking, Airflow orchestration, Spark analytics, Kubernetes
-              workloads, and AWS-hosted frontend/API services.
+              AI stem separation web app for musicians to upload a track and create playable
+              sessions with vocals, drums, bass, guitar, piano, and other available stems.
+              Built with a browser upload flow, private user library, billing plans, and a
+              queue-backed audio worker using Demucs and ffmpeg.
             </p>
+            <div class="project-tech">
+              <span>AWS CDK</span>
+              <span>Cognito</span>
+              <span>Lambda</span>
+              <span>S3</span>
+              <span>DynamoDB</span>
+              <span>SQS</span>
+              <span>Stripe</span>
+              <span>Docker</span>
+              <span>ECS/Fargate</span>
+              <span>Kubernetes GPU worker</span>
+            </div>
+            <div class="actions compact">
+              <a class="button primary" href="https://www.jamstems.com">Visit Jamstems</a>
+            </div>
+          </article>
+          <article class="project-main">
+            <p class="project-type">On-chain analytics</p>
+            <h3>Gatsbyt</h3>
+            <p>
+              On-chain analytics and ML forecasting platform combining blockchain ETL, feature
+              generation, PyTorch forecasting, MLflow experiment tracking, Airflow orchestration,
+              Spark analytics, Kubernetes workloads, and AWS-hosted frontend/API services.
+            </p>
+            <div class="project-tech">
+              <span>PyTorch</span>
+              <span>MLflow</span>
+              <span>Airflow</span>
+              <span>Spark</span>
+              <span>Kubernetes</span>
+              <span>AWS</span>
+              <span>LLaMA</span>
+            </div>
             <div class="actions compact">
               <a class="button primary" href="https://www.gatsbyt.com">Visit Gatsbyt</a>
               <a class="button secondary" href="https://github.com/alice1989123/gatsbyt">Repository</a>
             </div>
+          </article>
+        </div>
+        <div class="project-layout repo-layout">
+          <article class="project-main project-note">
+            <h3>Production-style data and ML architecture</h3>
+            <p>
+              Supporting repositories from the Gatsbyt ecosystem show the data engineering,
+              orchestration, crypto ETL, model strategy, and AI summarization components behind
+              the platform.
+            </p>
           </article>
           <div class="project-list">
             <a href="https://github.com/alice1989123/crypto-strategies">crypto-strategies</a>
